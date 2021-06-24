@@ -4,25 +4,25 @@
 Run git clone to download proyect
 
 ```ruby
-git clone https://github.com/luisMan97/TheMobieDB-iOS.git
+git clone https://github.com/luisMan97/MercadoLibre-iOS.git
 ```
 
 #### Third Party Libraries
 The project does not use third party libraries. Don't cocoapods, don't cartage, don't worry :)
 
 #### Funcionalidades
-- La pantalla principal consta de un listado de películas traidas de la API TheMovieDB.
-- La pantalla principal cuenta con una barra de búsqueda.
-- Se muestra mensaje de error cuando el servicio falla y un botón de reintentar para volver a hacer el llamado de nuevo.
-- La sección de favoritos está disponible sin acceso a Internet.
+- La pantalla principal cuenta con una barra de búsqueda, cuando se realiza la busqueda se realiza el llamado al servicio de manera automatica.
+- La pantalla principal consta de un listado de productos traidas de la API de Mercado Libre.
+- Cuando se selecciona un producto se va al detalle del producto
+- La pantalla del detalle cuenta con un botón de ver más, esté lleva a un web view con el sitio web del producto en mercado libre (se permite ingresar solo si hay internet).
+- Se muestra mensaje de error cuando el servicio falla o no hay conexión a internet.
 - Hay una modal de loading que se muestra cada vez que se hace la petición al servicio web.
 
 #### Funcionalidades técnicas:
 - La aplicación está desarrollada en Swift 5, con SwiftUI y Combine.
 - La aplicación tiene cómo arquitectura un tipo de MVVM extendido (CLEAN Architecture).
 - La aplicación usa programación reactiva.
-- La aplicación implementa diferentes patrones de diseño (Repository, DAO, Coordinator, Builder entre otros).
-- La aplicación usa CoreData como gestor de datos locales.
+- La aplicación implementa diferentes patrones de diseño (Repository, Coordinator, Builder entre otros).
 - La aplicación no usa librerías de terceros.
 - La aplicación usa una capa genérica y extensible con URLSession para hacer los llamados a los servicios.  
 - La aplicación usa Codable para el mapeo de JSON a objetos. 
