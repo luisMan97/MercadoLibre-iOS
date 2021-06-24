@@ -11,8 +11,8 @@ git clone https://github.com/luisMan97/MercadoLibre-iOS.git
 The project does not use third party libraries. Don't cocoapods, don't cartage, don't worry :)
 
 #### Funcionalidades
-- La pantalla principal cuenta con una barra de búsqueda, cuando se realiza la busqueda se realiza el llamado al servicio de manera automatica.
-- La pantalla principal consta de un listado de productos traidas de la API de Mercado Libre.
+- La pantalla principal cuenta con una barra de búsqueda, cuando se realiza la búsqueda se realiza el llamado al servicio de manera automática.
+- La pantalla principal consta de un listado de productos traídos de la API de Mercado Libre.
 - Cuando se selecciona un producto se va al detalle del producto
 - La pantalla del detalle cuenta con un botón de ver más, esté lleva a un web view con el sitio web del producto en mercado libre (se permite ingresar solo si hay internet).
 - Se muestra mensaje de error cuando el servicio falla o no hay conexión a internet.
@@ -34,5 +34,5 @@ Se implementó CLEAN como arquitectura, con las siguientes capas:
 2) Presentation: Contiene los ViewModels
 3) Interactor/UseCases: Contiene los casos de uso (acciones de la aplicación y lógica de negocios)
 4) Entity/Domain: Contiene las entidades
-5) Data: Contiene el patron repository para obtener los datos ya sea de una API o una base de datos local
+5) Data: Contiene el patrón repository para obtener los datos ya sea de una API o una base de datos local
 6) Framework: Contiene la implementación a más detalle de la obtención de datos usando ya la respectiva librería o framework (Alamofire, URLSession, CoreData y etc)
