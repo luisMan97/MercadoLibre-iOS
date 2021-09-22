@@ -1,4 +1,4 @@
-# TheMobieDB-iOS
+# MercadoLibre-iOS
 
 ## Installation
 Run git clone to download proyect
